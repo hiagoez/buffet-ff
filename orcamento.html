@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="orc.css">
+</head>
+<body>
+    <a href="index.html" class="voltar">← Voltar</a>
+    <form>
+    <label for="nome">Nome:</label>
+    <input type="text" id="nome" name="nome" required>
+
+    <label for="telefone">WhatsApp:</label>
+    <input type="tel" id="telefone" name="telefone" required>
+
+    <label for="evento">Tipo de Evento:</label>
+    <select id="evento" name="evento">
+        <option value="">Selecione o tipo</option>
+        <option>Aniversário</option>
+        <option>Casamento</option>
+        <option>Corporativo</option>
+        <option>Churrasco</option>
+    </select>
+    <label for="data">Data do Evento:</label>
+    <input type="date" id="data" name="data">
+    <label for="convidados">Número de Convidados:</label>
+    <select id="convidados" name="convidados" required>
+        <option value="">Selecione a quantidade</option>
+        <option>1 a 50</option>
+        <option>50 a 100</option>
+        <option>100 a 200</option>
+        <option>200 ou mais</option>
+    </select>
+    <h2>Tabela de Orçamento</h2>
+    <table>
+    <tr>
+        <th>Obs:Abaixo de 50</th>
+    </tr>
+    <tr>
+        <td>É um número insuficiente de convidados para contratar o buffet.</td>
+    </tr>
+</table>
+<table>
+    <tr>
+        <th>Tamanho do Evento</th>
+        <th>Convidados</th>
+        <th>Preço por Pessoa</th>
+    </tr>
+    <tr>
+        <td>Pequeno</td>
+        <td>50 a 99</td>
+        <td>R$23 a R$25 por Pessoa</td>
+    </tr>
+    <tr>
+        <td>Médio</td>
+        <td>100 a 199</td>
+        <td>R$30 a R$35 por Pessoa</td>
+    </tr>
+    <tr>
+        <td>Grande</td>
+        <td>200 ou mais</td>
+        <td>Acima de R$ 40,00</td>
+    </tr>
+</table>
+    <button type="submit">Solicitar Orçamento</button>
+</form>
+</body>
+</html>
